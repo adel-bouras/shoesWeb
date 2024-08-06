@@ -19,14 +19,12 @@ export default function Content(){
         const current = imgs.indexOf(main);
         const next = (current-1<0) ? (imgs.length-1) : (current-1);
         setMain(imgs[next]);
-        console.log(next);
     }
 
     const rightArrow = ()=>{
         const current = imgs.indexOf(main);
         const next = (current+1>=imgs.length) ? (0) : (current+1);
         setMain(imgs[next]);
-        console.log(next);
     }
 
     const increment = ()=>{
